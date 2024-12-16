@@ -50,9 +50,11 @@ img {
 }
 
 body {
+    min-height: 100vh;
     font-family: Roboto, sans-serif;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 300px auto;
 }
 
 header, main {
@@ -60,13 +62,20 @@ header, main {
 }
 
 header {
+    padding: 24px 40px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto;
     background-color: var(--white);
+    .searchbar {
+        height: 32px;
+        background-color: var(--light-grey);
+    }
     button {
         background-color: var(--blue);
         color: var(--white);
+        padding: 10px 0;
+        width: 90px;
     }
     .account {
         .profile-picture {
@@ -83,6 +92,7 @@ header {
 }
 
 nav {
+    padding: 24px;
     grid-row: 1 / -1;
     background-color: var(--blue);
     color: var(--white);
@@ -96,14 +106,21 @@ main {
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto;
+    padding: 30px;
+    gap: 20px;
+    h2 {
+        margin-bottom: 0.5em;
+    }
     #projects {
         grid-row: 1 / -1;
         > div {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
             > article {
+                padding: 30px 20px;
                 background-color: var(--white);
-                border-left: 5px solid var(--sunflower-yellow);
+                border-left: 8px solid var(--sunflower-yellow);
                 p {
                     color: var(--dark-grey);
                 }
@@ -112,24 +129,39 @@ main {
         }
     }
     #announcements {
-        article {
+        > div {
+            padding: 16px 24px;
             background-color: var(--white);
-            p {
-                color: var(--dark-grey);
+            article {
+                background-color: var(--white);
+                border-bottom: 1px solid var(--cool-grey);
+                padding: 16px 0;
+                &:last-child {
+                    border: none;
+                }
+                p {
+                    color: var(--dark-grey);
+                }
             }
         }
+        
     }
     #trending {
-        article {
+        > div {
+            padding: 8px 24px;
             background-color: var(--white);
-            p {
-                color: var(--dark-grey);
-            }
-            .profile-picture {
-                width: 40px;
-                height: 40px;
+            article {
+                padding: 16px 0;
+                p {
+                    color: var(--dark-grey);
+                }
+                .profile-picture {
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
+        
     }
 }
 
