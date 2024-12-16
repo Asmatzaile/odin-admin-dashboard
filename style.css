@@ -5,4 +5,33 @@
 
 body {
     font-family: Roboto, sans-serif;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+header, main {
+    grid-column: 2;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+nav {
+    grid-row: 1 / -1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto auto;
+    #projects {
+        grid-row: 1 / -1;
+        > div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
 }
