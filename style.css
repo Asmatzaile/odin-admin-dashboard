@@ -12,13 +12,36 @@ button {
     border: none;
 }
 
+img {
+    display: block;
+    max-width: 75%;
+    max-height: 75%;
+}
+
 * {
     --white: #ffffff;
     --black: #000000;
     --light-grey: #e2e8f0;
     --dark-grey: #636363;
     --blue: #1992d4;
-    --yellow: #f0b429;
+    --sunflower-yellow: #f0b429;
+    --light-blue: #e0f2fe;
+    --yellow: #facc15;
+    --cool-grey: #a2a2a2;
+    --pink: #fda4af;
+}
+
+.bg-lightblue {
+    background-color: var(--light-blue);
+}
+.bg-yellow {
+    background-color: var(--yellow);
+}
+.bg-coolgrey {
+    background-color: var(--cool-grey);
+}
+.bg-pink {
+    background-color: var(--pink);
 }
 
 @font-face {
@@ -45,6 +68,18 @@ header {
         background-color: var(--blue);
         color: var(--white);
     }
+    .account {
+        .profile-picture {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .greeting {
+        .profile-picture {
+            width: 48px;
+            height: 48px;
+        }
+    }
 }
 
 nav {
@@ -68,7 +103,7 @@ main {
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             > article {
                 background-color: var(--white);
-                border-left: 5px solid var(--yellow);
+                border-left: 5px solid var(--sunflower-yellow);
                 p {
                     color: var(--dark-grey);
                 }
@@ -90,6 +125,10 @@ main {
             p {
                 color: var(--dark-grey);
             }
+            .profile-picture {
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }
@@ -97,4 +136,13 @@ main {
 .icon {
     width: 20px;
     height: 20px;
+}
+
+.profile-picture {
+    display: grid;
+    border-radius: 50%;
+    > img {
+        align-self: center;
+        justify-self: center; /* place content center doesn't work! */
+    }
 }
