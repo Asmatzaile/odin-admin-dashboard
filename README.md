@@ -5,3 +5,7 @@ This is a project from the Intermediate HTML and CSS course of [The Odin Project
 ## Used technologies
 
 The project uses HTML and CSS. It is thought as an exercise to work on my CSS Grid skills.
+
+## Used resources
+
+Icons from [pictogrammers.com](https://pictogrammers.com/library/mdi/)
