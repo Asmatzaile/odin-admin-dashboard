@@ -70,12 +70,14 @@ header {
     .searchbar {
         height: 32px;
         background-color: var(--light-grey);
+        border-radius: 999px;
     }
     button {
         background-color: var(--blue);
         color: var(--white);
         padding: 10px 0;
         width: 90px;
+        border-radius: 999px;
     }
     .account {
         .profile-picture {
@@ -121,6 +123,7 @@ main {
                 padding: 30px 20px;
                 background-color: var(--white);
                 border-left: 8px solid var(--sunflower-yellow);
+                border-radius: 8px;
                 p {
                     color: var(--dark-grey);
                 }
@@ -130,6 +133,7 @@ main {
     }
     #announcements {
         > div {
+            border-radius: 8px;
             padding: 16px 24px;
             background-color: var(--white);
             article {
@@ -148,6 +152,7 @@ main {
     }
     #trending {
         > div {
+            border-radius: 8px;
             padding: 8px 24px;
             background-color: var(--white);
             article {
