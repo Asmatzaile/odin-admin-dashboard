@@ -236,7 +236,7 @@ main {
                 column-gap: 16px;
                 padding: 16px 0;
                 white-space: nowrap;
-                p {
+                span:last-of-type {
                     color: var(--dark-grey);
                 }
                 .profile-picture {
