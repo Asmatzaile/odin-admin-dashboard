@@ -8,7 +8,7 @@ li {
 }
 
 button {
-    font-family: inherit;
+    font: inherit;
     border: none;
 }
 
@@ -180,6 +180,7 @@ main {
                 grid-row: span 3;
                 gap: 0; /* removes the gap: 20px of above, i think */
                 h3 {
+                    font-weight: 600;
                     margin-bottom: 0.2em;
                 }
                 p {
@@ -206,6 +207,9 @@ main {
                 background-color: var(--white);
                 border-bottom: 1px solid var(--cool-grey);
                 padding: 16px 0;
+                h3 {
+                    font-weight: 600;
+                }
                 &:last-child {
                     border: none;
                 }
@@ -253,4 +257,16 @@ main {
         align-self: center;
         justify-self: center; /* place content center doesn't work! */
     }
+}
+.font-normal {
+    font-weight: 400;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-semibold {
+    font-weight: 600;
+}
+.font-bold {
+    font-weight: 700;
 }
