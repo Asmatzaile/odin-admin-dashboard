@@ -8,6 +8,8 @@ The project uses HTML and CSS. It is thought as an exercise to work on my CSS Gr
 
 ## Used assets
 
+Font [Roboto](https://fonts.google.com/specimen/Roboto/about) by Christian Robertson, Paratype, Font Bureau.
+
 Icons from [Pictogrammers](https://pictogrammers.com/library/mdi/).
 
 Images from [Pixabay](https://pixabay.com/):
