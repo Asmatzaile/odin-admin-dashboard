@@ -46,7 +46,7 @@ img {
 
 @font-face {
     font-family: Roboto;
-    src: url(roboto-medium.woff2)
+    src: url(roboto-variable.woff2);
 }
 
 body {
